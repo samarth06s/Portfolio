@@ -34,5 +34,6 @@ function checkFade() {
   });
 }
 
-window.addEventListener('scroll', checkFade);
-// window.addEventListener('load', checkFade);
+//window.addEventListener('scroll', checkFade);
+ window.addEventListener('load', checkFade);
+
