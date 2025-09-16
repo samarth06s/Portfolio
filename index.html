@@ -3,89 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samarth Shikari - Portfolio</title>
+  <title>Samarth Shikari - Advanced Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <nav>
-    <div class="logo">Samarth Shikari</div>
-    <ul>
-      <li><a href="#about" class="nav-link active">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">Samarth Shikari</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
   </nav>
 
-  <header>
-     <div class="profile-photo-wrapper">
-      <img src="profile.jpeg" alt="Samarth Shikari" class="profile-photo" />
+  <header id="home" class="header">
+    <div class="container header-container">
+      <div class="profile-photo">
+        <img src="profile.jpeg" alt="Samarth Shikari Profile Photo" />
+      </div>
+      <h1>Samarth Shikari</h1>
+      <p class="role">B.Tech - Computer Science and Engineering Student</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
     </div>
-    <h1>Hi, I'm Samarth Shikari</h1>
-    <p>B.Tech Computer Science & Engineering Student passionate about programming and web development.</p>
-    <button onclick="scrollToSection('contact')">Get in Touch</button>
   </header>
 
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I am a Computer Science and Engineering student at Sanjivani University, Kopargaon. 
-      Skilled in programming languages such as C, C++, HTML, CSS, JavaScript, and frameworks like PyTorch and TensorFlow. 
-      Passionate about AI and web development with experience working on projects using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.
-    </p>
-  </section>
+  <main class="main-content">
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate computer science student at Sanjivani University, focused on software development, AI, web technologies, and advanced computing concepts.
+      </p>
+    </section>
 
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Bootstrap</li>
-      <li>PHP</li>
-      <li>MySQL</li>
-      <li>PyTorch</li>
-      <li>TensorFlow</li>
-    </ul>
-  </section>
+    <section id="skills" class="section skills">
+      <h2>Technical Skills</h2>
+      <div class="skill-group">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C, C++</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, SQL, PHP</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks & Libraries</h3>
+        <ul>
+          <li>PyTorch, Keras, Tensorflow</li>
+          <li>Bootstrap</li>
+          <li>NLTK, spaCy, NumPy, Pandas, Matplotlib</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Windows, Ubuntu</li>
+          <li>MySQL, Git, GitHub</li>
+          <li>Cloud Computing, Web Data Management</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-card">
-      <h3>Design Thinking Idea Lab Project</h3>
-      <p>Repair-service platform called Fixly with team Turbo Titan, focused on improving repair services using innovative ideas.</p>
-    </div>
-    <div class="project-card">
-      <h3>AI and ROS Python Development</h3>
-      <p>Working on scripts like goal_publisher.py and go_to_goal.py to integrate AI for goal following in robotics using ROS.</p>
-    </div>
-  </section>
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <p>No projects are listed yet, but this section is reserved for upcoming works.</p>
+    </section>
 
-  <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    
-       
-        <div class="contact-grid">
-            <div>Email:</div>
-            <div><a href="mailto:samarth.shikari_25uce@sanjivani.edu.in">samarth.shikari_25uce@sanjivani.edu.in</a></div>
-            <div>Github:</div>
-            <div><a href="https://github.com/samarth06s" target="_blank">samarth06s</a></div>
-            <div>LinkedIn:</div>
-            <div><a href="https://www.linkedin.com/in/samarth-shikari-b383bb375?" target="_blank">View Profile</a></div>
-        </div>
-   
-  </section>
+    <section id="education" class="section education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech (CSE)</strong> - Sanjivani University, Kopargaon (2025-2029)</li>
+        <li><strong>Class 12 (HSC)</strong> - Pune Divisional Board (89% in 2025)</li>
+        <li><strong>Class 10 (SSC)</strong> - Aurangabad Divisional Board (94% in 2023)</li>
+      </ul>
+    </section>
 
-  <footer>
-    &copy; 2025 Samarth Shikari. All rights reserved.
+    <section id="achievements" class="section achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Topper of Sanjivani Jr. College for Class 12 with 89%</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form" onsubmit="return false;">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <p>Email: samarthshikari999@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/samarth06s" target="_blank">samarth06s</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Samarth Shikari. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
-
-
 </body>
 </html>
