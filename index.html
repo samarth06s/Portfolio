@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Samarth Shikari - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samarth Shikari - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>SamarthShikari</h1>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-   <section id="home">
-        <div class="hero-content">
-            <div class="profile-img-container">
-                <img src="profile.jpeg" alt="Samarth Shikari">
-            </div>
-            <h2>Hello, I’m Samarth</h2>
-            <p>B.Tech Computer Science | Web Developer | AI Enthusiast</p>
-            <a href="#contact" class="btn-primary">Contact Me</a>
-        </div>
-    </section>
+  <nav>
+    <div class="logo">Samarth Shikari</div>
+    <ul>
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a B.Tech Computer Science student at Sanjivani University with a passion for web development, artificial intelligence, and cloud computing. I have hands-on experience with programming languages like C, C++, HTML, CSS, JavaScript, and frameworks like PyTorch and Tensorflow.</p>
-    </section>
+  <header>
+     <div class="profile-photo-wrapper">
+      <img src="profile.jpeg" alt="Samarth Shikari" class="profile-photo" />
+    </div>
+    <h1>Hi, I'm Samarth Shikari</h1>
+    <p>B.Tech Computer Science & Engineering Student passionate about programming and web development.</p>
+    <button onclick="scrollToSection('contact')">Get in Touch</button>
+  </header>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">HTML5</div>
-            <div class="skill-card">CSS3</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Cloud Computing</div>
-        </div>
-    </section>
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a Computer Science and Engineering student at Sanjivani University, Kopargaon. 
+      Skilled in programming languages such as C, C++, HTML, CSS, JavaScript, and frameworks like PyTorch and TensorFlow. 
+      Passionate about AI and web development with experience working on projects using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.
+    </p>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <center><p>No projects uploaded yet. Stay tuned!</p></center>
-    </section>
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>PyTorch</li>
+      <li>TensorFlow</li>
+    </ul>
+  </section>
 
-   <section id="contact">
-        <h2>Contact Me</h2>
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card">
+      <h3>Design Thinking Idea Lab Project</h3>
+      <p>Repair-service platform called Fixly with team Turbo Titan, focused on improving repair services using innovative ideas.</p>
+    </div>
+    <div class="project-card">
+      <h3>AI and ROS Python Development</h3>
+      <p>Working on scripts like goal_publisher.py and go_to_goal.py to integrate AI for goal following in robotics using ROS.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    
+       
         <div class="contact-grid">
             <div>Email:</div>
             <div><a href="mailto:samarth.shikari_25uce@sanjivani.edu.in">samarth.shikari_25uce@sanjivani.edu.in</a></div>
@@ -72,12 +77,15 @@
             <div>LinkedIn:</div>
             <div><a href="https://www.linkedin.com/in/samarth-shikari-b383bb375?" target="_blank">View Profile</a></div>
         </div>
-    </section>
+   
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Samarth Shikari. All rights reserved.</p>
-    </footer>
+  <footer>
+    &copy; 2025 Samarth Shikari. All rights reserved.
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+
+
 </body>
 </html>
