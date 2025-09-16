@@ -15,7 +15,9 @@ navLinks.forEach(link => {
     e.preventDefault();
     const targetId = link.getAttribute('href').substring(1);
     const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({ behavior: 'smooth' });
+    if(targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
     navMenu.classList.remove('active');
     hamburger.classList.remove('active');
   });
@@ -35,4 +37,13 @@ function checkFade() {
 }
 
 window.addEventListener('scroll', checkFade);
-window.addEventListener('load', checkFade);
+
+// Ensure no unwanted scroll on load
+window.addEventListener('load', () => {
+  checkFade();
+
+  // Remove hash scrolling if present
+  if (window.location.hash) {
+    window.scrollTo(0, 0);
+  }
+});
